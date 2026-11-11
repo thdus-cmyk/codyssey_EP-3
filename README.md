@@ -51,8 +51,8 @@ codyssey_EP-3/
 ├── data.json                # 분석용 5x5, 13x13, 25x25 테스트 데이터셋
 ├── images/                  # README 증빙 실행 스크린샷 저장 폴더
 │   ├── mode1_result.png
-│   ├── mode2_result(1).png
-│   └── mode2_result(2).png
+│   ├── mode2_result_1.png
+│   └── mode2_result_2.png
 └── README.md                # 과제 결과 분석 및 기술 리포트
 ```
 
@@ -65,35 +65,22 @@ codyssey_EP-3/
 python main.py
 ```
 
-### 3.2 제공 기능 (모드 1~4)
-1. **모드 1**: $3 \times 3$ 사용자 필터/패턴 콘솔 직접 입력 (입력 형태 검증 루프 탑재)
-2. **모드 2**: `data.json` 자동 로드, 라벨 정규화, PASS/FAIL 검증, 성능 측정 표 출력
-3. **모드 3 (Bonus)**: 크기 $N$ 입력 시 $N \times N$ Cross/X 2차원 패턴 동적 생성
-4. **모드 4 (Bonus)**: 2차원 배열 연산 vs 1차원 배열 최적화 연산 실행 속도(ms) 비교
+### 3.2 제공 기능 및 실행 증빙 스크린샷
 
-<details>
-<summary>📸 <b>[스크린샷 보기] 모드 1: 사용자 입력 (3x3) 실행 화면</b></summary>
-<br>
+#### 1) 모드 1: $3 \times 3$ 사용자 입력 및 MAC 판정
+사용자 필터/패턴 콘솔 직접 입력 (입력 형태 검증 루프 탑재)
 
 ![모드 1 실행 결과](./images/mode1_result.png)
 
-</details>
+#### 2) 모드 2: `data.json` 일괄 분석 (1/2 - 패턴 분석 및 정규화)
+`data.json` 자동 로드, 라벨 정규화, PASS/FAIL 검증
 
-<details>
-<summary>📸 <b>[스크린샷 보기] 모드 2: data.json 일괄 분석 실행 화면 (1/2)</b></summary>
-<br>
+![모드 2 분석 1](./images/mode2_result_1.png)
 
-![모드 2 분석 1](./images/mode2_result(1).png)
+#### 3) 모드 2: `data.json` 일괄 분석 (2/2 - 성능 분석 표 및 요약)
+크기별 연산 시간 측정 표 및 통과/실패 결과 요약
 
-</details>
-
-<details>
-<summary>📸 <b>[스크린샷 보기] 모드 2: 성능 분석 표 및 결과 요약 (2/2)</b></summary>
-<br>
-
-![모드 2 분석 2](./images/mode2_result(2).png)
-
-</details>
+![모드 2 분석 2](./images/mode2_result_2.png)
 
 ---
 
