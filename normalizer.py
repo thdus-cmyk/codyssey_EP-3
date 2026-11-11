@@ -29,3 +29,4 @@ if __name__ == "__main__":
     for item in test_cases:
         result = normalize_label(item)
         print(f"입력: {repr(item):10} -> 정규화: {result}")
+        
